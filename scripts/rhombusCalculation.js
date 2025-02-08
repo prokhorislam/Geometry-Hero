@@ -17,7 +17,6 @@ function Rhombus() {
     
     let li = document.createElement("li");
     li.style.paddingBottom = "20px";
-    resultArea.appendChild(li);
     li.appendChild(document.createTextNode(`Diagram(1) : ${width} cm, Diagram(2) : ${length} cm | Rhombus area = ${area} cm². `));
-    
+    resultArea.appendChild(li);
 }

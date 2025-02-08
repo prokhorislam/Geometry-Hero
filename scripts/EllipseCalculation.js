@@ -17,7 +17,6 @@ function Ellipse() {
     
     let li = document.createElement("li");
     li.style.paddingBottom = "20px";
-    resultArea.appendChild(li);
     li.appendChild(document.createTextNode(`a Axis : ${width} cm, b Axis : ${length} cm | Ellipse area = ${area} cm². `));
-    
+    resultArea.appendChild(li);
 }
