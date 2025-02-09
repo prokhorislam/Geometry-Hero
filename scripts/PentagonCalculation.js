@@ -17,6 +17,7 @@ function Pentagon() {
     
     let li = document.createElement("li");
     li.style.paddingBottom = "20px";
+    li.style.fontSize = "24px";
     li.appendChild(document.createTextNode(`Perimeter : ${width} cm, Apothem : ${length} cm | Pentagon area = ${area} cm². `));
     resultArea.appendChild(li);
 }

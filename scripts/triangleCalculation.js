@@ -16,6 +16,7 @@ function triangle() {
     let resultArea = document.getElementById("result-area");
     let li = document.createElement("li");
     li.style.paddingBottom = "20px";
+    li.style.fontSize = "24px";
     li.appendChild(document.createTextNode(`base : ${base} cm, height : ${height} cm | Triangle area = ${area} square cm².`));
     resultArea.appendChild(li);
 }

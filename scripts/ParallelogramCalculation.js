@@ -17,6 +17,7 @@ function Parallelogram() {
     
     let li = document.createElement("li");
     li.style.paddingBottom = "20px";
+    li.style.fontSize = "24px";
     li.appendChild(document.createTextNode(`base : ${width} cm, height : ${length} cm | Parallelogram area = ${area} cm². `));
     resultArea.appendChild(li);
 }

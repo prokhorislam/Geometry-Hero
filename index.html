@@ -18,13 +18,13 @@
 </head>
 <body>
     <header>
-        <nav class="mx-4 my-4 lg:mx-6 lg:my-6">
+        <nav class="mx-4 mt-6 mb-10 lg:mx-6 lg:mt-6 lg:mb-7">
             <div class="navbar rounded-2xl bg-[#1090d81a]">
                 <div class="navbar-start">
-                  <a class="btn btn-ghost text-xl"><span>Geometry Hero</span></a>
+                  <a class="btn btn-ghost text-4xl lg:text-2xl"><span>Geometry Hero</span></a>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn">Blog</a>
+                  <a class="btn text-4xl lg:text-xl">Blog</a>
                 </div>
               </div>
         </nav>
@@ -34,182 +34,182 @@
             <!-- main section cards -->
             <div class="flex-1">
                 <!-- card container's -->
-                 <div class="grid gap-4 lg:grid-cols-3 p-2">
+                 <div class="grid gap-12 lg:gap-4 lg:grid-cols-3 p-2">
                     <!-- card 1 triangle-->
-                    <div class="card card-compact bg-base-100 p-3 w-56 md:w-60 lg:w-64 h-auto shadow-xl hover:bg-[#1090d81a]">
+                    <div class="card card-compact bg-base-100 p-3 w-auto lg:w-64 h-auto shadow-xl hover:bg-[#1090d81a]">
                         <!-- triangle img -->
-                        <figure class="w-48 h-48 md:w-40 lg:w-44 mx-auto mt-5">
+                        <figure class="w-48 h-48 md:w-auto  lg:w-44 mx-auto mt-5">
                           <img
                             src="./images/triangle.png"
                             alt="triangle" />
                         </figure>
                         <!-- card body -->
                         <div class="card-body">
-                          <h2 class="card-title mx-auto text-2xl font-bold">Triangle</h2>
-                          <p class="mx-auto font-normal text-base">Area (A) = 0.5 x b x h</p>
+                          <h2 class="card-title lg:mt-0 mt-2 mx-auto text-4xl lg:text-2xl font-bold">Triangle</h2>
+                          <p class="mx-auto font-normal mb-3 mt-4 lg:mt-0 lg:mb-0 text-xl">Area (A) = 0.5 x b x h</p>
                           <!-- calculator input bar -->
-                          <div class="flex justify-center mb-2">
+                          <div class="flex justify-center mb-4 lg:mb-2">
                             <span class="flex">
-                                <input id="triangle-base" class="w-16 h-7 placeholder:text-sm text-center placeholder:px-2" type="text" placeholder="base"><span class="mx-2 font-normal text-lg">cm</span>
+                                <input id="triangle-base" class="w-16 md:w-32 lg:w-16 h-7 lg:h-7 md:h-10 placeholder:text-lg text-center placeholder:px-2" type="text" placeholder="base"><span class="mx-2 font-bold text-lg md:text-2xl lg:text-lg">cm</span>
                             </span>
                             <span class="flex">
-                                <input id="triangle-height" class="w-16 h-7 placeholder:text-sm text-center placeholder:px-2" type="text" placeholder="height"><span class="mx-2 font-normal text-lg">cm</span>
+                                <input id="triangle-height" class="w-16 md:w-32 lg:w-16 h-7 lg:h-7 md:h-10 placeholder:text-lg text-center placeholder:px-2" type="text" placeholder="height"><span class="mx-2 font-bold text-lg md:text-2xl lg:text-lg">cm</span>
                             </span>
                           </div>
                           <!-- calculate button -->
                           <div class="card-actions justify-end">
-                            <button onclick="triangle()" class="btn btn-primary w-full text-xl font-bold">Calculate</button>
+                            <button onclick="triangle()" class="btn btn-primary w-full text-3xl lg:text-xl font-extrabold">Calculate</button>
                           </div>
                         </div>
                       </div>
                       <!-- card 2 rectangle-->
-                      <div class="card card-compact bg-base-100 p-3 w-56 md:w-60 lg:w-64 h-auto shadow-xl hover:bg-[#1090d81a]">
+                      <div class="card card-compact bg-base-100 p-3 w-auto lg:w-64 h-auto shadow-xl hover:bg-[#1090d81a]">
                         <!-- triangle img -->
-                        <figure class="w-48 h-48 md:w-40 lg:w-44 mx-auto mt-5">
+                        <figure class="w-48 h-48 md:w-auto  lg:w-44 mx-auto mt-5">
                           <img
                             src="./images/rectangle.png"
                             alt="rectangle" />
                         </figure>
                         <!-- card body -->
                         <div class="card-body">
-                          <h2 class="card-title mx-auto text-2xl font-bold">Rectangle</h2>
-                          <p class="mx-auto font-normal text-base">Area (A) = w x l</p>
+                          <h2 class="card-title lg:mt-0 mt-2 mx-auto text-4xl lg:text-2xl font-bold">Rectangle</h2>
+                          <p class="mx-auto font-normal mb-3 mt-4 lg:mt-0 lg:mb-0 text-xl">Area (A) = w x l</p>
                           <!-- calculator input bar -->
                           <div class="flex justify-center mb-2">
                             <span class="flex">
-                                <input id="rectangle-width" class="w-16 h-7 placeholder:text-sm text-center placeholder:px-2" type="text" placeholder="width"><span class="mx-2 font-normal text-lg">cm</span>
+                                <input id="rectangle-width" class="w-16 md:w-32 lg:w-16 h-7 lg:h-7 md:h-10 placeholder:text-lg text-center placeholder:px-2" type="text" placeholder="width"><span class="mx-2 font-bold text-lg md:text-2xl lg:text-lg">cm</span>
                             </span>
                             <span class="flex">
-                                <input id="rectangle-length" class="w-16 h-7 placeholder:text-sm text-center placeholder:px-2" type="text" placeholder="length"><span class="mx-2 font-normal text-lg">cm</span>
+                                <input id="rectangle-length" class="w-16 md:w-32 lg:w-16 h-7 lg:h-7 md:h-10 placeholder:text-lg text-center placeholder:px-2" type="text" placeholder="length"><span class="mx-2 font-bold text-lg md:text-2xl lg:text-lg">cm</span>
                             </span>
                           </div>
                           <!-- calculate button -->
                           <div class="card-actions justify-end">
-                            <button onclick="rectangle()" class="btn btn-primary w-full text-xl font-bold">Calculate</button>
+                            <button onclick="rectangle()" class="btn btn-primary w-full text-3xl lg:text-xl font-extrabold">Calculate</button>
                           </div>
                         </div>
                       </div>
                       <!-- card 3 Parallelogram-->
-                      <div class="card card-compact bg-base-100 p-3 w-56 md:w-60 lg:w-64 h-auto shadow-xl hover:bg-[#1090d81a]">
+                      <div class="card card-compact bg-base-100 p-3 w-auto lg:w-64 h-auto shadow-xl hover:bg-[#1090d81a]">
                         <!-- Parallelogram img -->
-                        <figure class="w-48 h-48 md:w-40 lg:w-44 mx-auto mt-5">
+                        <figure class="w-48 h-48 md:w-auto  lg:w-44 mx-auto mt-5">
                           <img
                             src="./images/parallelogram.png"
                             alt="Parallelogram" />
                         </figure>
                         <!-- card body -->
                         <div class="card-body">
-                          <h2 class="card-title mx-auto text-2xl font-bold">Parallelogram</h2>
-                          <p class="mx-auto font-normal text-base">Area (A) = b x h</p>
+                          <h2 class="card-title lg:mt-0 mt-2 mx-auto text-4xl lg:text-2xl font-bold">Parallelogram</h2>
+                          <p class="mx-auto font-normal mb-3 mt-4 lg:mt-0 lg:mb-0 text-xl">Area (A) = b x h</p>
                           <!-- calculator input bar -->
                           <div class="flex justify-center mb-2">
                             <span class="flex">
-                                <input id="Parallelogram-width" class="w-16 h-7 placeholder:text-sm text-center placeholder:px-2" type="text" placeholder="base"><span class="mx-2 font-normal text-lg">cm</span>
+                                <input id="Parallelogram-width" class="w-16 md:w-32 lg:w-16 h-7 lg:h-7 md:h-10 placeholder:text-lg text-center placeholder:px-2" type="text" placeholder="base"><span class="mx-2 font-bold text-lg md:text-2xl lg:text-lg">cm</span>
                             </span>
                             <span class="flex">
-                                <input id="Parallelogram-length" class="w-16 h-7 placeholder:text-sm text-center placeholder:px-2" type="text" placeholder="height"><span class="mx-2 font-normal text-lg">cm</span>
+                                <input id="Parallelogram-length" class="w-16 md:w-32 lg:w-16 h-7 lg:h-7 md:h-10 placeholder:text-lg text-center placeholder:px-2" type="text" placeholder="height"><span class="mx-2 font-bold text-lg md:text-2xl lg:text-lg">cm</span>
                             </span>
                           </div>
                           <!-- calculate button -->
                           <div class="card-actions justify-end">
-                            <button onclick="Parallelogram()" class="btn btn-primary w-full text-xl font-bold">Calculate</button>
+                            <button onclick="Parallelogram()" class="btn btn-primary w-full text-3xl lg:text-xl font-extrabold">Calculate</button>
                           </div>
                         </div>
                       </div>
                       <!-- card 4 -->
-                      <div class="card card-compact bg-base-100 p-3 w-56 md:w-60 lg:w-64 h-auto shadow-xl hover:bg-[#1090d81a]">
+                      <div class="card card-compact bg-base-100 p-3 w-auto lg:w-64 h-auto shadow-xl hover:bg-[#1090d81a]">
                         <!-- Rhombus img -->
-                        <figure class="w-48 h-48 md:w-40 lg:w-44 mx-auto mt-5">
+                        <figure class="w-48 h-48 md:w-auto  lg:w-44 mx-auto mt-5">
                           <img
                             src="./images/rhombus.png"
                             alt="Rhombus" />
                         </figure>
                         <!-- card body -->
                         <div class="card-body">
-                          <h2 class="card-title mx-auto text-2xl font-bold">Rhombus</h2>
-                          <p class="mx-auto font-normal text-base">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                          <h2 class="card-title lg:mt-0 mt-2 mx-auto text-4xl lg:text-2xl font-bold">Rhombus</h2>
+                          <p class="mx-auto font-normal mb-3 mt-4 lg:mt-0 lg:mb-0 text-xl">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                           <!-- calculator input bar -->
                           <div class="flex justify-center mb-2">
                             <span class="flex">
-                                <input id="Rhombus-width" class="w-16 h-7 placeholder:text-xs text-center placeholder:px-2" type="text" placeholder="diagonal1"><span class="mx-2 font-normal text-lg">cm</span>
+                                <input id="Rhombus-width" class="w-16 md:w-32 lg:w-16 h-7 lg:h-7 md:h-10 placeholder:text-lg text-center placeholder:px-2" type="text" placeholder="diagonal1"><span class="mx-2 font-bold text-lg md:text-2xl lg:text-lg">cm</span>
                             </span>
                             <span class="flex">
-                                <input id="Rhombus-length" class="w-16 h-7 placeholder:text-xs text-center placeholder:px-2" type="text" placeholder="diagonal2"><span class="mx-2 font-normal text-lg">cm</span>
+                                <input id="Rhombus-length" class="w-16 md:w-32 lg:w-16 h-7 lg:h-7 md:h-10 placeholder:text-lg text-center placeholder:px-2" type="text" placeholder="diagonal2"><span class="mx-2 font-bold text-lg md:text-2xl lg:text-lg">cm</span>
                             </span>
                           </div>
                           <!-- calculate button -->
                           <div class="card-actions justify-end">
-                            <button onclick="Rhombus()" class="btn btn-primary w-full text-xl font-bold">Calculate</button>
+                            <button onclick="Rhombus()" class="btn btn-primary w-full text-3xl lg:text-xl font-extrabold">Calculate</button>
                           </div>
                         </div>
                       </div>
                       <!-- card 5 -->
-                      <div class="card card-compact bg-base-100 p-3 w-56 md:w-60 lg:w-64 h-auto shadow-xl hover:bg-[#1090d81a]">
+                      <div class="card card-compact bg-base-100 p-3 w-auto lg:w-64 h-auto shadow-xl hover:bg-[#1090d81a]">
                         <!-- Pentagon img -->
-                        <figure class="w-48 h-48 md:w-40 lg:w-44 mx-auto mt-5">
+                        <figure class="w-48 h-48 md:w-auto  lg:w-44 mx-auto mt-5">
                           <img
                             src="./images/pentagon.png"
                             alt="triangle" />
                         </figure>
                         <!-- card body -->
                         <div class="card-body">
-                          <h2 class="card-title mx-auto text-2xl font-bold">Pentagon</h2>
-                          <p class="mx-auto font-normal text-base">Area (A) = 0.5 x p x a</p>
+                          <h2 class="card-title lg:mt-0 mt-2 mx-auto text-4xl lg:text-2xl font-bold">Pentagon</h2>
+                          <p class="mx-auto font-normal mb-3 mt-4 lg:mt-0 lg:mb-0 text-xl">Area (A) = 0.5 x p x a</p>
                           <!-- calculator input bar -->
                           <div class="flex justify-center mb-2">
                             <span class="flex">
-                                <input id="Pentagon-width" class="w-16 h-7 placeholder:text-xs text-center placeholder:px-2" type="text" placeholder="perimeter"><span class="mx-2 font-normal text-lg">cm</span>
+                                <input id="Pentagon-width" class="w-16 md:w-32 lg:w-16 h-7 lg:h-7 md:h-10 placeholder:text-lg text-center placeholder:px-2" type="text" placeholder="perimeter"><span class="mx-2 font-bold text-lg md:text-2xl lg:text-lg">cm</span>
                             </span>
                             <span class="flex">
-                                <input id="Pentagon-length" class="w-16 h-7 placeholder:text-xs text-center placeholder:px-2" type="text" placeholder="apothem"><span class="mx-2 font-normal text-lg">cm</span>
+                                <input id="Pentagon-length" class="w-16 md:w-32 lg:w-16 h-7 lg:h-7 md:h-10 placeholder:text-lg text-center placeholder:px-2" type="text" placeholder="apothem"><span class="mx-2 font-bold text-lg md:text-2xl lg:text-lg">cm</span>
                             </span>
                           </div>
                           <!-- calculate button -->
                           <div class="card-actions justify-end">
-                            <button onclick="Pentagon()" class="btn btn-primary w-full text-xl font-bold">Calculate</button>
+                            <button onclick="Pentagon()" class="btn btn-primary w-full text-3xl lg:text-xl font-extrabold">Calculate</button>
                           </div>
                         </div>
                       </div>
                       <!-- card 6 -->
-                      <div class="card card-compact bg-base-100 p-3 w-56 md:w-60 lg:w-64 h-auto shadow-xl hover:bg-[#1090d81a]">
+                      <div class="card card-compact bg-base-100 p-3 w-auto lg:w-64 h-auto shadow-xl hover:bg-[#1090d81a]">
                         <!-- Ellipse img -->
-                        <figure class="w-48 h-48 md:w-40 lg:w-44 mx-auto mt-5">
+                        <figure class="w-48 h-48 md:w-auto  lg:w-44 mx-auto mt-5">
                           <img
                             src="./images/ellipse.png"
                             alt="Ellipse" />
                         </figure>
                         <!-- card body -->
                         <div class="card-body">
-                          <h2 class="card-title mx-auto text-2xl font-bold">Ellipse</h2>
-                          <p class="mx-auto font-normal text-base">Area (A) =&pi;ab </p>
+                          <h2 class="card-title lg:mt-0 mt-2 mx-auto text-4xl lg:text-2xl font-bold">Ellipse</h2>
+                          <p class="mx-auto font-normal mb-3 mt-4 lg:mt-0 lg:mb-0 text-xl">Area (A) =&pi;ab </p>
                           <!-- calculator input bar -->
                           <div class="flex justify-center mb-2">
                             <span class="flex">
-                                <input id="Ellipse-width" class="w-16 h-7 placeholder:text-sm text-center placeholder:px-2" type="text" placeholder="a axis"><span class="mx-2 font-normal text-lg">cm</span>
+                                <input id="Ellipse-width" class="w-16 md:w-32 lg:w-16 h-7 lg:h-7 md:h-10 placeholder:text-lg text-center placeholder:px-2" type="text" placeholder="a axis"><span class="mx-2 font-bold text-lg md:text-2xl lg:text-lg">cm</span>
                             </span>
                             <span class="flex">
-                                <input id="Ellipse-length" class="w-16 h-7 placeholder:text-sm text-center placeholder:px-2" type="text" placeholder="b axis"><span class="mx-2 font-normal text-lg">cm</span>
+                                <input id="Ellipse-length" class="w-16 md:w-32 lg:w-16 h-7 lg:h-7 md:h-10 placeholder:text-lg text-center placeholder:px-2" type="text" placeholder="b axis"><span class="mx-2 font-bold text-lg md:text-2xl lg:text-lg">cm</span>
                             </span>
                           </div>
                           <!-- calculate button -->
                           <div class="card-actions justify-end">
-                            <button onclick="Ellipse()" class="btn btn-primary w-full text-xl font-bold">Calculate</button>
+                            <button onclick="Ellipse()" class="btn btn-primary w-full text-3xl lg:text-xl font-extrabold">Calculate</button>
                           </div>
                         </div>
                       </div>
                  </div>
             </div>
             <!-- calculation results -->
-            <aside class=" h-full shadow-xl mr-8 md:mr-4 lg:mr-3 w-60 flex-col" >
+            <aside class=" h-full shadow-xl mr-5 lg:mr-3 w-2/5 lg:w-60 flex-col" >
                 <!-- area calculation heading -->
                 <div class="flex justify-center">
-                    <p class="text-lg font-bold">Calculation Area</p>
+                    <p class="lg:text-xl text-4xl font-bold">Calculation Area</p>
                 </div>
-                <hr class="mt-2 mb-4">
+                <hr class="mt-2 mb-5">
                 <div id="result-area">
                     <!-- area calculation results -->
                 </div>
-                <button  id="reset-button" class="btn w-full flex-end hover:bg-[#1090d81a]">reset</button>
+                <button  id="reset-button" class="btn w-full lg:h-14 h-32 flex-end hover:bg-[#1090d81a] lg:text-xl text-4xl font-bold">Clear</button>
             </aside>
         </section>
     </main>

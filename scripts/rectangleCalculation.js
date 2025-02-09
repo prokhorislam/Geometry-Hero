@@ -14,6 +14,7 @@ function rectangle() {
     // create element
     let li = document.createElement("li");
     li.style.paddingBottom = "20px";
+    li.style.fontSize = "24px";
     li.appendChild(document.createTextNode(`width : ${width} cm, length : ${length} cm | Rectangle area = ${recArea} square cm². `));
     resultArea.appendChild(li);
 }
